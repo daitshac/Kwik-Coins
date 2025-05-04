@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kwik Coins Pay Loans</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="hero fade-in">
+    <h1>Kwik Coins Pay Loans</h1>
+    <p>Simple. Fast. Reliable. Get your loan now.</p>
+    <a href="#" id="applyBtn" class="btn">Apply Now</a>
+  </header>
+
+  <section class="section fade-in delay">
+    <h2>Loan Calculator</h2>
+    <label for="amount">Loan Amount (K50 - K500):</label>
+    <input type="range" id="amount" min="50" max="500" step="50" />
+    <p>Selected Amount: <span id="amountValue">K50</span></p>
+
+    <label for="duration">Choose Repayment Duration:</label>
+    <select id="duration">
+      <option value="14">14 Days (30% Interest)</option>
+      <option value="28">28 Days (60% Interest)</option>
+    </select>
+
+    <div class="output">
+      <p>Interest: <span id="interest">K0</span></p>
+      <p>Total Repayment: <span id="total">K0</span></p>
+      <p>Due Date: <span id="dueDate">--</span></p>
+    </div>
+  </section>
+
+  <section class="section info fade-in delay2">
+    <h2>Repayment Rules</h2>
+    <ol>
+      <li>Flat Interest: 30% for 14 days, 60% for 28 days</li>
+      <li>Early repayments are welcome with no penalties</li>
+      <li>Late repayments incur 1.5% per day compounded every 14 days</li>
+      <li>Minimum Loan: K50 | Maximum: K500 (up to K1000 for returning clients)</li>
+    </ol>
+  </section>
+
+  <section class="section fade-in delay2">
+    <a id="finalApplyBtn" class="btn" href="#">Proceed to Application Form</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Kwik Coins Pay. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
